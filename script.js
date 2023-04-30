@@ -5,14 +5,27 @@ $(document).ready(function() {
 $(".saveBtn").on("click", function (){
 var description9 = $(".description").val();
 localStorage.setItem("9", description9);
+
 var description10 = $(".sky").val();
 localStorage.setItem("10", description10);
+
 var description11 = $(".description11").val();
 localStorage.setItem("11", description11);
 
+var description12 = $(".description12").val();
+localStorage.setItem("12", description12);
 
+var description13 = $(".description13").val();
+localStorage.setItem("13", description13);
 
+var description14 = $(".description14").val();
+localStorage.setItem("14", description14);
 
+var description15 = $(".description15").val();
+localStorage.setItem("15", description15);
+
+var description16 = $(".description11").val();
+localStorage.setItem("16", description16);
 
 
 
