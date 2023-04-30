@@ -45,7 +45,7 @@ $(".description11").val(localStorage.getItem("11"));
 
 
 
-$("#currentDay").text(dayjs().format("dddd,MMMM D, YYYY") );
+$("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY") );
 });
 
 // function to check the current time and update the background color of each time block based on the status of past, present or future
