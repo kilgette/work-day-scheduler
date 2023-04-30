@@ -2,6 +2,50 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(document).ready(function() {
+$(".saveBtn").on("click", function (){
+var description9 = $(".description").val();
+localStorage.setItem("9", description9);
+var description10 = $(".sky").val();
+localStorage.setItem("10", description10);
+var description11 = $(".description11").val();
+localStorage.setItem("11", description11);
+
+
+
+
+
+
+
+
+})
+$(".description").val(localStorage.getItem("9"));
+$(".sky").val(localStorage.getItem("10"));
+$(".description11").val(localStorage.getItem("11"));
+// $(".description").val(localStorage.getItem("9"));
+// function updateTimeBlocks () {
+//   const currentHour = dayjs().hour();
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$("#currentDay").text(dayjs().format("dddd,MMMM D, YYYY") );
 });
 
 // function to check the current time and update the background color of each time block based on the status of past, present or future
@@ -13,7 +57,7 @@ function updateTimeBlocks () {
 setInterval(updateTimeBlocks, 60 * 60 * 1000); //understand this code! 
 {
 
-});
+};
 
 //loop through each time block 
 
