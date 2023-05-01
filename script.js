@@ -1,10 +1,10 @@
-
 $(document).ready(function() {
 $(".saveBtn").on("click", function (){
-var description9 = $(".description").val();
+
+var description9 = $(".description9").val();
 localStorage.setItem("9", description9);
 
-var description10 = $(".sky").val();
+var description10 = $(".description10").val();
 localStorage.setItem("10", description10);
 
 var description11 = $(".description11").val();
@@ -25,13 +25,12 @@ localStorage.setItem("15", description15);
 var description16 = $(".description16").val();
 localStorage.setItem("16", description16);
 
+});
 
-
-
-})
-$(".description").val(localStorage.getItem("9"));
-$(".sky").val(localStorage.getItem("10"));
-$(".description11").val(localStorage.getItem("11"));
+// function to check the current time and update the background color of each time block based on the status of past, present or future
+function updateTimeBlocks () {
+  const currentHour = dayjs().hour();
+}
 
 
 $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY") );
@@ -48,7 +47,16 @@ setInterval(updateTimeBlocks, 60 * 60 * 1000);
 
 };
 
+
 //loop through each time block 
+
+
+
+//check if time blocks are in the past, present or future
+
+
+
+
 
 //call a function to update the background colors of the time blocks depending on the current time 
 
