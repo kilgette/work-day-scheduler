@@ -69,8 +69,6 @@ localStorage.setItem("16", description16);
 function updateTimeBlocks () {
   const currentTime = dayjs().hour();
 }
-// //selects all the time block divs?
-// const hourID = document.QuerySelectorAll('.hour');
 
 //manages current time display 
 $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY") );
@@ -89,29 +87,9 @@ setInterval(updateTimeBlocks, 60 * 60 * 1000);
 };
 
 
-//loop through each time block 
-
-
-
-//check if time blocks are in the past, present or future
 
 
 
 
 
-//call a function to update the background colors of the time blocks depending on the current time 
 
-
-// GIVEN I am using a daily planner to create a schedule
-// WHEN I open the planner
-// THEN the current day is displayed at the top of the calendar
-// WHEN I scroll down
-// THEN I am presented with timeblocks for standard business hours
-// WHEN I view the timeblocks for that day
-// THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-// WHEN I click into a timeblock
-// THEN I can enter an event
-// WHEN I click the save button for that timeblock
-// THEN the text for that event is saved in local storage
-// WHEN I refresh the page
-// THEN the saved events persist
