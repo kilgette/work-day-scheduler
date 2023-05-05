@@ -9,8 +9,7 @@ const timeBlock = document.getElementById('currentDay')
 timeBlock.textContent = currentHour
 
 setInterval(() => {
-let presentDateTime = dayjs().format(`dddd, MMMM D, YYYY, HH:mm:ss
-`)
+let presentDateTime = dayjs().format(`dddd, MMMM D, YYYY, HH:mm:ss`)
 document.getElementById('currentDay').innerText=presentDateTime
 }, 1000);  
 
